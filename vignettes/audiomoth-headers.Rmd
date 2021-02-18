@@ -14,12 +14,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, message=FALSE, warning=FALSE}
 library(audiomoth.tools)
 library(magrittr)
 ```
 
-```{r}
+```{r read-in, message=FALSE, warning=FALSE}
 header_tb <- extract_header_info(system.file("extdata", package = "audiomoth.tools"))
+```
+
+```{r}
+header_tb
 ```
 
