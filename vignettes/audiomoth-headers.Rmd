@@ -1,0 +1,25 @@
+---
+title: "audiomoth-headers"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{audiomoth-headers}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(audiomoth.tools)
+library(magrittr)
+```
+
+```{r}
+header_tb <- extract_header_info(system.file("extdata", package = "audiomoth.tools"))
+```
+
