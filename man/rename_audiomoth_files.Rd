@@ -10,8 +10,13 @@ rename_audiomoth_files(dir_path)
 \item{dir_path}{a path to the directory of audiomoth files}
 }
 \value{
-
+a directory with audiomoth files that do not end in 'T'
 }
 \description{
 This function removes the 'T' from the end of audiomoth filenames allowing them to be uploaded to Arbimon
+}
+\examples{
+\dontrun{
+rename_audiomoth_files("user/audiomoth_files")
+}
 }

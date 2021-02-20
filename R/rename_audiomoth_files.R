@@ -3,11 +3,14 @@
 #' @description This function removes the 'T' from the end of audiomoth filenames allowing them to be uploaded to Arbimon
 #' @param dir_path a path to the directory of audiomoth files
 #'
-#' @return
-#' @export TRUE
+#' @return a directory with audiomoth files that do not end in 'T'
+#' @export
 #'
 #'
 #' @examples
+#' \dontrun{
+#' rename_audiomoth_files("user/audiomoth_files")
+#' }
 rename_audiomoth_files <- function(dir_path) {
   files_vec <- list.files(dir_path, full.names = TRUE)
   sapply(files_vec,FUN=function(eachPath){

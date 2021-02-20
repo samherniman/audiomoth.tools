@@ -18,7 +18,9 @@ extract_header_info <- function(dir_path, recursive = FALSE) {
         full.names = TRUE),
     FUN=function(eachPath){
         ehd(
+          suppressWarnings(
           readLines(eachPath, skipNul = TRUE)[1])
+        )
 
   })
 

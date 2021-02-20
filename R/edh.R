@@ -6,7 +6,9 @@
 #' @export
 #'
 #' @examples
-#' test_string <- "Recorded at 12:21:00 10/02/2021 (UTC) by AudioMoth 24E144085F256717 at medium gain setting while battery state was 3.9V and temperature was -2.6C. Amplitude threshold was 160."
+#' test_string <- "Recorded at 12:21:00 10/02/2021 (UTC) by AudioMoth
+#' 24E144085F256717 at medium gain setting while battery state was 3.9V
+#' and temperature was -2.6C. Amplitude threshold was 160."
 #' ehd(test_string)
 ehd <- function(header_vec) {
   c(stringr::str_extract(
