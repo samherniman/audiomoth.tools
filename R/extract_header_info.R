@@ -9,7 +9,9 @@
 #' @examples
 #' extract_header_info(system.file("extdata", package = "audiomoth.tools"))
 extract_header_info <- function(dir_path, recursive = FALSE) {
-
+  # define variables
+  tz <- sn <- gain <- volt <- temp <- NULL
+  # list files in a directory and read in each header and extract data
   ts_vec <- sapply(
     list.files(
         dir_path,
@@ -24,11 +26,12 @@ extract_header_info <- function(dir_path, recursive = FALSE) {
 
   })
 
+  # transpose the results
   ts_vec <- t(ts_vec)
+  # rename columns
   colnames(ts_vec) <- c("date", "tz", "sn", "gain", "volt", "temp")
-
+  # remove extra data and return dataframe
   ts_vec <- tibble::as_tibble(ts_vec, .name_repair = "check_unique")
-
   dplyr::transmute(ts_vec,
       recorded_date_time = lubridate::parse_date_time(date, "HMS dmy"),
       timezone = stringr::str_sub(tz, start = 2L, end = -2L),
