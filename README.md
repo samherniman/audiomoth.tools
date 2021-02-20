@@ -81,35 +81,4 @@ remove the *T* at the end of each filename. You can use
 
 ``` r
 rename_audiomoth_files(system.file("extdata", package = "audiomoth.tools"))
-#> Warning in file.rename(from = eachPath, to = stringr::str_remove(eachPath, :
-#> cannot rename file 'C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/
-#> temp_libpath5418631f6927/audiomoth.tools/extdata/20210201_210100.WAV' to
-#> 'C:/Users/herniman/AppData/Local/emp/RtmpUFwOLY/temp_libpath5418631f6927/
-#> audiomoth.tools/extdata/20210201_210100.WAV', reason 'The system cannot find the
-#> path specified'
-#> Warning in file.rename(from = eachPath, to = stringr::str_remove(eachPath, :
-#> cannot rename file 'C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/
-#> temp_libpath5418631f6927/audiomoth.tools/extdata/20210201_210600.WAV' to
-#> 'C:/Users/herniman/AppData/Local/emp/RtmpUFwOLY/temp_libpath5418631f6927/
-#> audiomoth.tools/extdata/20210201_210600.WAV', reason 'The system cannot find the
-#> path specified'
-#> Warning in file.rename(from = eachPath, to = stringr::str_remove(eachPath, :
-#> cannot rename file 'C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/
-#> temp_libpath5418631f6927/audiomoth.tools/extdata/20210201_211100.WAV' to
-#> 'C:/Users/herniman/AppData/Local/emp/RtmpUFwOLY/temp_libpath5418631f6927/
-#> audiomoth.tools/extdata/20210201_211100.WAV', reason 'The system cannot find the
-#> path specified'
-#> Warning in file.rename(from = eachPath, to = stringr::str_remove(eachPath, :
-#> cannot rename file 'C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/
-#> temp_libpath5418631f6927/audiomoth.tools/extdata/header_df.csv' to 'C:/Users/
-#> herniman/AppData/Local/emp/RtmpUFwOLY/temp_libpath5418631f6927/audiomoth.tools/
-#> extdata/header_df.csv', reason 'The system cannot find the path specified'
-#> C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/temp_libpath5418631f6927/audiomoth.tools/extdata/20210201_210100.WAV 
-#>                                                                                                                FALSE 
-#> C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/temp_libpath5418631f6927/audiomoth.tools/extdata/20210201_210600.WAV 
-#>                                                                                                                FALSE 
-#> C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/temp_libpath5418631f6927/audiomoth.tools/extdata/20210201_211100.WAV 
-#>                                                                                                                FALSE 
-#>       C:/Users/herniman/AppData/Local/Temp/RtmpUFwOLY/temp_libpath5418631f6927/audiomoth.tools/extdata/header_df.csv 
-#>                                                                                                                FALSE
 ```
