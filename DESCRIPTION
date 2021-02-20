@@ -14,7 +14,7 @@ Imports:
     dplyr,
     tibble,
     lubridate,
-    magrittr
+    qpdf
 RoxygenNote: 7.1.1
 Suggests: 
     knitr,

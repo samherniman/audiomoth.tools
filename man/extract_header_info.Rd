@@ -4,10 +4,12 @@
 \alias{extract_header_info}
 \title{Extract information from audiomoth wav file headers}
 \usage{
-extract_header_info(dir_path)
+extract_header_info(dir_path, recursive = FALSE)
 }
 \arguments{
 \item{dir_path}{path to directory that holds audiomoth files}
+
+\item{recursive}{FALSE only searches the specified folder. TRUE searches folders recursively}
 }
 \value{
 dataframe with recording time, settings, battery and temperature
