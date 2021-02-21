@@ -58,9 +58,9 @@ library(magrittr)
 
 header_df %>%
   ggplot(data = .)+
-  geom_point(aes(x = recorded_date_time, y = tempeature_celcius, color = tempeature_celcius))+
+  geom_point(aes(x = recorded_date_time, y = temperature_celcius, color = temperature_celcius))+
   geom_smooth(
-    aes(x = recorded_date_time, y = tempeature_celcius),
+    aes(x = recorded_date_time, y = temperature_celcius),
     method = 'gam',
     se = FALSE,
     color = "brown"
@@ -73,7 +73,7 @@ header_df %>%
     panel.grid.minor = element_blank())
 ```
 
-![](man/figures/README-graph-temp-1.png)
+![](man/figures/README-graph-temp-2.png)
 
 Depending on your version of the audiomoth software, filenames may look
 like `20210201_210100T.WAV` (YYYYMMDD\_HHMMSST). If you want to upload
